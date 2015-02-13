@@ -1,0 +1,49 @@
+# Override in development.
+baseurl: '/resources'
+
+exclude:
+- ".rbenv-version"
+- README.md
+- CONTRIBUTING.md
+- LICENSE.md
+
+# markdown
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - with_toc_data
+
+# Site metadata
+name: DC Council Data Resources
+description: "Resources used by the OGC of the DC Council."
+
+
+# GitHub information
+repo_name: resources
+branch: gh-pages
+gh_org: DC Council
+url: https://dccouncil.github.io/resources
+enforce_https: dccouncil.github.io
+
+# Navigation
+# List links that should appear in the site sidebar here
+navigation:
+- text: Home
+  url: ""
+  internal: true
+- text: Legal Resources
+  url: legal/
+  internal: true
+- text: Legislative Resources
+  url: legislative/
+  internal: true
+- text: Ethics Resources
+  url: ethics/
+  internal: true
+- text: Litigation Resources
+  url: litigation/
+  internal: true
+
+# Style Variables
+brand_color: "#103560"
